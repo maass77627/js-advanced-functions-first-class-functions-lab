@@ -10,7 +10,7 @@ const returnLastTwoDrivers = function(drivers) {
     return drivers.slice(numtwo, num)
 }
 
-const selectingDrivers = [returnFirstTwoDrivers(), returnLastTwoDrivers()]
+const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers]
 
 
 function createFareMultiplier(integer) {
@@ -20,7 +20,7 @@ function createFareMultiplier(integer) {
 }
 
 const fareDoubler = createFareMultiplier(2)
-const fareTriple = createFareMultiplier(3)
+const fareTripler = createFareMultiplier(3)
 
 
 
