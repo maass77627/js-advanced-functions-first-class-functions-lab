@@ -1,29 +1,35 @@
-// Code your solution in this file!
-const returnFirstTwoDrivers = function(drivers) {
-    return drivers.slice(0,2)
-   
+
+
+function returnFirstTwoDrivers(array){
+   return array.slice(0,2)
+
 }
 
-const returnLastTwoDrivers = function(drivers) {
-    let num = drivers.length
-    let numtwo = drivers.length - 2
-    return drivers.slice(numtwo, num)
+function returnLastTwoDrivers(array) {
+  let num = array.length
+    let numtwo = array.length - 2
+    return array.slice(numtwo, num)
+}
+const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers] 
+       
+
+function createFareMultiplier(num, fare) {
+    return (fare) => fare * num
+
 }
 
-const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers]
 
+ function fareDoubler(fare) {
+    return fare*2
 
-function createFareMultiplier(integer) {
-    return function(fare) {
-        return fare*integer
-    }
+ }
+
+function fareTripler(fare) {
+    return fare*3
+
 }
 
-const fareDoubler = createFareMultiplier(2)
-const fareTripler = createFareMultiplier(3)
+function selectDifferentDrivers(array, cb){
+    return cb(array)
 
-
-
-const selectDifferentDrivers= function(drivers, cb) {
-        return cb(drivers)
 }
